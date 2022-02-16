@@ -10,6 +10,8 @@ import java.util.Objects;
 
 public class MainActivity extends AppCompatActivity {
 
+    private static final String CAT_PHOTO_URL = "https://cat-photo.vercel.app/";
+
     private WebView webView;
 
     @Override
@@ -20,7 +22,7 @@ public class MainActivity extends AppCompatActivity {
 
         this.initWebView();
 
-        this.getWebView().loadUrl("https://cat.photo/");
+        this.getWebView().loadUrl(CAT_PHOTO_URL);
     }
 
     @Override
